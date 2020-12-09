@@ -27,7 +27,8 @@ function setup() {
     createCanvas(Width, Height);
 
     w1 = novel[0].width * Width / novel[0].width;
-    h1 = novel[0].height * height / novel[0].height;
+    //h1 = novel[0].height * height / novel[0].height;
+    h1 = novel[0].height * Width / novel[0].width;
 
 }
 
@@ -35,8 +36,8 @@ function draw() {
 
 
 imageMode(CENTER);
-//image(novel[novelNumber], Width/2, Height/2, w1, h1);
-image(novel[novelNumber], Width/2, Height/2 - 5);
+image(novel[novelNumber], Width/2, Height/2, w1, h1);
+
 
 
 }
