@@ -3,7 +3,7 @@
 var Width;
 var Height;
 
-var novel = [9];
+var novel = [10];
 
 var novelNumber = 0;
 
@@ -14,7 +14,7 @@ var w1;
 //------------------ProgressBarで使用する変数------------------
 
 function preload() {
-    　for (let i = 0; i < 10; i++) {
+    　for (let i = 0; i < 11; i++) {
         novel[i] = loadImage('image/duke_' + i + '.jpg');
     }
 }
