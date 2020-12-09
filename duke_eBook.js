@@ -15,7 +15,7 @@ var w1;
 
 function preload() {
     　for (let i = 0; i < 10; i++) {
-        novel[i] = loadImage('duke_jpg/duke_' + i + '.jpg');
+        novel[i] = loadImage('image/duke_' + i + '.jpg');
     }
 }
 
@@ -40,15 +40,24 @@ image(novel[novelNumber], Width/2, Height/2, w1, h1);
 
 }
 
-function keyPressed() {
+function touchStarted() {
 
    
-        if (keyCode === ENTER) {
+        
             novelNumber = novelNumber + 1;
-        }
+       
      
     
 }
+
+// do this prevent default touch interaction
+function mousePressed() {
+    return false;
+}
+
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
 
 
 
