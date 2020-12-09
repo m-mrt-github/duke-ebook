@@ -35,7 +35,8 @@ function draw() {
 
 
 imageMode(CENTER);
-image(novel[novelNumber], Width/2, Height/2, w1, h1);
+//image(novel[novelNumber], Width/2, Height/2, w1, h1);
+image(novel[novelNumber], Width/2, Height/2 - 5);
 
 
 }
